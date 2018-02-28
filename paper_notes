@@ -1,0 +1,20 @@
+when generating the model, the input is a general value, and the weight is a variable
+when using gradient ascent to find the corner cases, the weight is a general, and the input is a variable
+
+the aim is:
+    increase the neuron coverage
+    find the corner cases
+
+# steps of the algorithm
+initialize 3 dictionnaries to record the value of false, which means all the neurons are not covered
+for 20 times:
+    choose 1 random image from 10000
+    get results(3 in total) from the 3 models' prediction
+    compare if the 3 results is the same
+        if they are different, then need to find out where they were different:
+            update neuron coverage
+            calculate neuron coverage
+            print out neuron coverage
+            continue (means the for loop continues to the next one)
+    here the prediction results are the same, so goes to the layer comparision (means the 3 models do the same prediction values)
+    select 1 neuron to cover for every model, this is a random selection from the model's dictionary
