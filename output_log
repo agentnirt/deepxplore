@@ -1,0 +1,479 @@
+runfile('/home/sarah/virtualenvs/activate/deepxplore/MNIST/gen_diff.py', args='blackout 1 0.1 10 20 50 0', wdir='/home/sarah/virtualenvs/activate/deepxplore/MNIST')
+Reloaded modules: configs, Model1, Model2, Model3, utils1
+Model1 loaded
+Model2 loaded
+Model3 loaded
+the overall seeds is: 20
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [2.03933109e-06 1.02153429e-07 4.55423782e-04 1.05625506e-04
+ 7.65280603e-08 2.84447372e-02 1.44059639e-04 5.47386847e-08
+ 9.70661819e-01 1.86032048e-04]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 52
+YYYYYYYYYYYYYYYYYYYYYY not covered appears YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+YYYYYYYYYYYYYYYYYYYYYYpredictions, 8YYYYYYYYYYYYYYYYYYYYYY
+################### layer_name1, index1: predictions, 8
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 148
+YYYYYYYYYYYYYYYYYYYYYY not covered appears YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+YYYYYYYYYYYYYYYYYYYYYYfc1, 20YYYYYYYYYYYYYYYYYYYYYY
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 268
+YYYYYYYYYYYYYYYYYYYYYY not covered appears YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+YYYYYYYYYYYYYYYYYYYYYYfc2, 78YYYYYYYYYYYYYYYYYYYYYY
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx model1.get_layer('before_softmax').output[..., orig_label]: Tensor("Mean_2303:0", shape=(), dtype=float32)
+loss1:Tensor("mul_548:0", shape=(), dtype=float32)
+loss2:Tensor("Mean_2305:0", shape=(), dtype=float32)
+loss3:Tensor("Mean_2306:0", shape=(), dtype=float32)
+loss1_neuron:Tensor("Mean_2307:0", shape=(), dtype=float32)
+loss2_neuron:Tensor("Mean_2308:0", shape=(), dtype=float32)
+loss2_neuron:Tensor("Mean_2308:0", shape=(), dtype=float32)
+layer_output: Tensor("add_1649:0", shape=(), dtype=float32)
+final_loss: Tensor("Mean_2310:0", shape=(), dtype=float32)
+grads: Tensor("div_273:0", shape=(?, 28, 28, 1), dtype=float32)
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 0.962, 148 neurons 0.818, 268 neurons 0.701
+averaged covered neurons 0.767
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [1.63741861e-05 8.45626055e-04 6.73513277e-04 2.29224563e-01
+ 9.10617039e-03 6.75273299e-01 1.01147634e-04 8.08682700e-04
+ 1.45318918e-02 6.94187284e-02]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 2
+YYYYYYYYYYYYYYYYYYYYYY not covered appears YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+YYYYYYYYYYYYYYYYYYYYYYpredictions, 9YYYYYYYYYYYYYYYYYYYYYY
+################### layer_name1, index1: predictions, 9
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 27
+YYYYYYYYYYYYYYYYYYYYYY not covered appears YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+YYYYYYYYYYYYYYYYYYYYYYfc1, 80YYYYYYYYYYYYYYYYYYYYYY
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 80
+YYYYYYYYYYYYYYYYYYYYYY not covered appears YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+YYYYYYYYYYYYYYYYYYYYYYfc2, 72YYYYYYYYYYYYYYYYYYYYYY
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx model1.get_layer('before_softmax').output[..., orig_label]: Tensor("Mean_2312:0", shape=(), dtype=float32)
+loss1:Tensor("mul_550:0", shape=(), dtype=float32)
+loss2:Tensor("Mean_2314:0", shape=(), dtype=float32)
+loss3:Tensor("Mean_2315:0", shape=(), dtype=float32)
+loss1_neuron:Tensor("Mean_2316:0", shape=(), dtype=float32)
+loss2_neuron:Tensor("Mean_2317:0", shape=(), dtype=float32)
+loss2_neuron:Tensor("Mean_2317:0", shape=(), dtype=float32)
+layer_output: Tensor("add_1655:0", shape=(), dtype=float32)
+final_loss: Tensor("Mean_2319:0", shape=(), dtype=float32)
+grads: Tensor("div_274:0", shape=(?, 28, 28, 1), dtype=float32)
+the overall grad iterations is: 50
+/home/sarah/virtualenvs/activate/deepxplore/MNIST/gen_diff.py:215: DeprecationWarning: `imsave` is deprecated!
+`imsave` is deprecated in SciPy 1.0.0, and will be removed in 1.2.0.
+Use ``imageio.imwrite`` instead.
+  gen_img_deprocessed)
+/home/sarah/virtualenvs/activate/deepxplore/MNIST/gen_diff.py:218: DeprecationWarning: `imsave` is deprecated!
+`imsave` is deprecated in SciPy 1.0.0, and will be removed in 1.2.0.
+Use ``imageio.imwrite`` instead.
+  orig_img_deprocessed)
+covered neurons percentage 52 neurons 1.000, 148 neurons 0.905, 268 neurons 0.832
+averaged covered neurons 0.874
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [2.8044403e-06 1.0280456e-07 1.0327237e-04 8.3960953e-07 8.6094900e-08
+ 2.1564029e-03 2.6177142e-05 5.3082954e-07 9.9770135e-01 8.4739195e-06]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 0
+################### layer_name1, index1: before_softmax, 5
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 14
+YYYYYYYYYYYYYYYYYYYYYY not covered appears YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+YYYYYYYYYYYYYYYYYYYYYYfc1, 50YYYYYYYYYYYYYYYYYYYYYY
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 45
+YYYYYYYYYYYYYYYYYYYYYY not covered appears YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+YYYYYYYYYYYYYYYYYYYYYYfc1, 92YYYYYYYYYYYYYYYYYYYYYY
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx model1.get_layer('before_softmax').output[..., orig_label]: Tensor("Mean_2321:0", shape=(), dtype=float32)
+loss1:Tensor("mul_552:0", shape=(), dtype=float32)
+loss2:Tensor("Mean_2323:0", shape=(), dtype=float32)
+loss3:Tensor("Mean_2324:0", shape=(), dtype=float32)
+loss1_neuron:Tensor("Mean_2325:0", shape=(), dtype=float32)
+loss2_neuron:Tensor("Mean_2326:0", shape=(), dtype=float32)
+loss2_neuron:Tensor("Mean_2326:0", shape=(), dtype=float32)
+layer_output: Tensor("add_1661:0", shape=(), dtype=float32)
+final_loss: Tensor("Mean_2328:0", shape=(), dtype=float32)
+grads: Tensor("div_275:0", shape=(?, 28, 28, 1), dtype=float32)
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 0.946, 268 neurons 0.888
+averaged covered neurons 0.919
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [9.1542862e-10 1.1218447e-08 3.4251893e-06 9.9986804e-01 2.9897687e-10
+ 8.7776672e-05 1.4859142e-11 5.1400116e-07 3.9875755e-05 3.3990707e-07]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 0
+################### layer_name1, index1: block1_pool1, 1
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 8
+YYYYYYYYYYYYYYYYYYYYYY not covered appears YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+YYYYYYYYYYYYYYYYYYYYYYfc1, 50YYYYYYYYYYYYYYYYYYYYYY
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 30
+YYYYYYYYYYYYYYYYYYYYYY not covered appears YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+YYYYYYYYYYYYYYYYYYYYYYfc2, 41YYYYYYYYYYYYYYYYYYYYYY
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx model1.get_layer('before_softmax').output[..., orig_label]: Tensor("Mean_2330:0", shape=(), dtype=float32)
+loss1:Tensor("mul_554:0", shape=(), dtype=float32)
+loss2:Tensor("Mean_2332:0", shape=(), dtype=float32)
+loss3:Tensor("Mean_2333:0", shape=(), dtype=float32)
+loss1_neuron:Tensor("Mean_2334:0", shape=(), dtype=float32)
+loss2_neuron:Tensor("Mean_2335:0", shape=(), dtype=float32)
+loss2_neuron:Tensor("Mean_2335:0", shape=(), dtype=float32)
+layer_output: Tensor("add_1667:0", shape=(), dtype=float32)
+final_loss: Tensor("Mean_2337:0", shape=(), dtype=float32)
+grads: Tensor("div_276:0", shape=(?, 28, 28, 1), dtype=float32)
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 0.966, 268 neurons 0.907
+averaged covered neurons 0.936
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [2.7071721e-06 3.7617776e-06 5.6055751e-07 3.2560504e-04 9.6448809e-03
+ 1.4011468e-02 2.8265567e-06 2.2696606e-04 2.6693312e-03 9.7311193e-01]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 0
+################### layer_name1, index1: predictions, 6
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 5
+YYYYYYYYYYYYYYYYYYYYYY not covered appears YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+YYYYYYYYYYYYYYYYYYYYYYfc1, 76YYYYYYYYYYYYYYYYYYYYYY
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 25
+YYYYYYYYYYYYYYYYYYYYYY not covered appears YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+YYYYYYYYYYYYYYYYYYYYYYfc2, 79YYYYYYYYYYYYYYYYYYYYYY
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx model1.get_layer('before_softmax').output[..., orig_label]: Tensor("Mean_2339:0", shape=(), dtype=float32)
+loss1:Tensor("mul_556:0", shape=(), dtype=float32)
+loss2:Tensor("Mean_2341:0", shape=(), dtype=float32)
+loss3:Tensor("Mean_2342:0", shape=(), dtype=float32)
+loss1_neuron:Tensor("Mean_2343:0", shape=(), dtype=float32)
+loss2_neuron:Tensor("Mean_2344:0", shape=(), dtype=float32)
+loss2_neuron:Tensor("Mean_2344:0", shape=(), dtype=float32)
+layer_output: Tensor("add_1673:0", shape=(), dtype=float32)
+final_loss: Tensor("Mean_2346:0", shape=(), dtype=float32)
+grads: Tensor("div_277:0", shape=(?, 28, 28, 1), dtype=float32)
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 0.980, 268 neurons 0.933
+averaged covered neurons 0.955
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [1.4065743e-04 5.5684694e-08 2.4338054e-02 1.1400186e-02 6.6567210e-08
+ 9.4931266e-07 2.1856386e-10 9.6377414e-01 6.3775215e-06 3.3953556e-04]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 0
+################### layer_name1, index1: block2_pool1, 10
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 3
+YYYYYYYYYYYYYYYYYYYYYY not covered appears YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+YYYYYYYYYYYYYYYYYYYYYYfc1, 76YYYYYYYYYYYYYYYYYYYYYY
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 18
+YYYYYYYYYYYYYYYYYYYYYY not covered appears YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+YYYYYYYYYYYYYYYYYYYYYYfc2, 4YYYYYYYYYYYYYYYYYYYYYY
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx model1.get_layer('before_softmax').output[..., orig_label]: Tensor("Mean_2348:0", shape=(), dtype=float32)
+loss1:Tensor("mul_558:0", shape=(), dtype=float32)
+loss2:Tensor("Mean_2350:0", shape=(), dtype=float32)
+loss3:Tensor("Mean_2351:0", shape=(), dtype=float32)
+loss1_neuron:Tensor("Mean_2352:0", shape=(), dtype=float32)
+loss2_neuron:Tensor("Mean_2353:0", shape=(), dtype=float32)
+loss2_neuron:Tensor("Mean_2353:0", shape=(), dtype=float32)
+layer_output: Tensor("add_1679:0", shape=(), dtype=float32)
+final_loss: Tensor("Mean_2355:0", shape=(), dtype=float32)
+grads: Tensor("div_278:0", shape=(?, 28, 28, 1), dtype=float32)
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 0.986, 268 neurons 0.937
+averaged covered neurons 0.959
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [4.9940097e-09 3.8141121e-07 9.9945635e-01 1.5804067e-04 1.2238348e-09
+ 1.9235022e-08 7.3269784e-12 6.3034486e-07 3.8447493e-04 8.5723670e-08]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 0
+################### layer_name1, index1: before_softmax, 0
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 2
+YYYYYYYYYYYYYYYYYYYYYY not covered appears YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+YYYYYYYYYYYYYYYYYYYYYYfc1, 76YYYYYYYYYYYYYYYYYYYYYY
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 17
+YYYYYYYYYYYYYYYYYYYYYY not covered appears YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+YYYYYYYYYYYYYYYYYYYYYYfc2, 57YYYYYYYYYYYYYYYYYYYYYY
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx model1.get_layer('before_softmax').output[..., orig_label]: Tensor("Mean_2357:0", shape=(), dtype=float32)
+loss1:Tensor("mul_560:0", shape=(), dtype=float32)
+loss2:Tensor("Mean_2359:0", shape=(), dtype=float32)
+loss3:Tensor("Mean_2360:0", shape=(), dtype=float32)
+loss1_neuron:Tensor("Mean_2361:0", shape=(), dtype=float32)
+loss2_neuron:Tensor("Mean_2362:0", shape=(), dtype=float32)
+loss2_neuron:Tensor("Mean_2362:0", shape=(), dtype=float32)
+layer_output: Tensor("add_1685:0", shape=(), dtype=float32)
+final_loss: Tensor("Mean_2364:0", shape=(), dtype=float32)
+grads: Tensor("div_279:0", shape=(?, 28, 28, 1), dtype=float32)
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 0.993, 268 neurons 0.944
+averaged covered neurons 0.966
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [4.0123711e-04 9.9201173e-01 5.7460030e-04 5.5792643e-06 8.5509120e-04
+ 2.0787318e-06 1.7773310e-03 1.4964129e-03 2.8706586e-03 5.1974371e-06]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 0
+################### layer_name1, index1: before_softmax, 2
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 1
+YYYYYYYYYYYYYYYYYYYYYY not covered appears YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+YYYYYYYYYYYYYYYYYYYYYYfc1, 76YYYYYYYYYYYYYYYYYYYYYY
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 15
+YYYYYYYYYYYYYYYYYYYYYY not covered appears YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+YYYYYYYYYYYYYYYYYYYYYYfc1, 2YYYYYYYYYYYYYYYYYYYYYY
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx model1.get_layer('before_softmax').output[..., orig_label]: Tensor("Mean_2366:0", shape=(), dtype=float32)
+loss1:Tensor("mul_562:0", shape=(), dtype=float32)
+loss2:Tensor("Mean_2368:0", shape=(), dtype=float32)
+loss3:Tensor("Mean_2369:0", shape=(), dtype=float32)
+loss1_neuron:Tensor("Mean_2370:0", shape=(), dtype=float32)
+loss2_neuron:Tensor("Mean_2371:0", shape=(), dtype=float32)
+loss2_neuron:Tensor("Mean_2371:0", shape=(), dtype=float32)
+layer_output: Tensor("add_1691:0", shape=(), dtype=float32)
+final_loss: Tensor("Mean_2373:0", shape=(), dtype=float32)
+grads: Tensor("div_280:0", shape=(?, 28, 28, 1), dtype=float32)
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 0.993, 268 neurons 0.948
+averaged covered neurons 0.968
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [8.32631242e-10 3.91420099e-12 8.94632194e-07 8.25622465e-06
+ 1.04630334e-13 4.21078832e-11 1.49729369e-18 9.99989510e-01
+ 4.62212629e-10 1.31348997e-06]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 0
+################### layer_name1, index1: block2_conv1, 0
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 1
+YYYYYYYYYYYYYYYYYYYYYY not covered appears YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+YYYYYYYYYYYYYYYYYYYYYYfc1, 76YYYYYYYYYYYYYYYYYYYYYY
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 14
+YYYYYYYYYYYYYYYYYYYYYY not covered appears YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+YYYYYYYYYYYYYYYYYYYYYYfc2, 57YYYYYYYYYYYYYYYYYYYYYY
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx model1.get_layer('before_softmax').output[..., orig_label]: Tensor("Mean_2375:0", shape=(), dtype=float32)
+loss1:Tensor("mul_564:0", shape=(), dtype=float32)
+loss2:Tensor("Mean_2377:0", shape=(), dtype=float32)
+loss3:Tensor("Mean_2378:0", shape=(), dtype=float32)
+loss1_neuron:Tensor("Mean_2379:0", shape=(), dtype=float32)
+loss2_neuron:Tensor("Mean_2380:0", shape=(), dtype=float32)
+loss2_neuron:Tensor("Mean_2380:0", shape=(), dtype=float32)
+layer_output: Tensor("add_1697:0", shape=(), dtype=float32)
+final_loss: Tensor("Mean_2382:0", shape=(), dtype=float32)
+grads: Tensor("div_281:0", shape=(?, 28, 28, 1), dtype=float32)
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 1.000, 268 neurons 0.951
+averaged covered neurons 0.972
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [1.3741020e-06 9.9871159e-01 7.8316829e-05 3.6744413e-04 2.2070789e-04
+ 1.9815612e-05 1.0867761e-06 3.1343318e-04 2.5518707e-04 3.1148957e-05]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 0
+################### layer_name1, index1: block1_conv1, 3
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 0
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 13
+YYYYYYYYYYYYYYYYYYYYYY not covered appears YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+YYYYYYYYYYYYYYYYYYYYYYfc2, 24YYYYYYYYYYYYYYYYYYYYYY
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx model1.get_layer('before_softmax').output[..., orig_label]: Tensor("Mean_2384:0", shape=(), dtype=float32)
+loss1:Tensor("mul_566:0", shape=(), dtype=float32)
+loss2:Tensor("Mean_2386:0", shape=(), dtype=float32)
+loss3:Tensor("Mean_2387:0", shape=(), dtype=float32)
+loss1_neuron:Tensor("Mean_2388:0", shape=(), dtype=float32)
+loss2_neuron:Tensor("Mean_2389:0", shape=(), dtype=float32)
+loss2_neuron:Tensor("Mean_2389:0", shape=(), dtype=float32)
+layer_output: Tensor("add_1703:0", shape=(), dtype=float32)
+final_loss: Tensor("Mean_2391:0", shape=(), dtype=float32)
+grads: Tensor("div_282:0", shape=(?, 28, 28, 1), dtype=float32)
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 1.000, 268 neurons 0.955
+averaged covered neurons 0.974
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [5.6304980e-06 5.7832131e-07 3.5490252e-06 5.1218158e-05 1.0658550e-05
+ 4.4498238e-06 7.0559444e-12 9.2385095e-01 1.1265055e-06 7.6071814e-02]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 0
+################### layer_name1, index1: block2_conv1, 0
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 0
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 12
+YYYYYYYYYYYYYYYYYYYYYY not covered appears YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+YYYYYYYYYYYYYYYYYYYYYYfc2, 49YYYYYYYYYYYYYYYYYYYYYY
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx model1.get_layer('before_softmax').output[..., orig_label]: Tensor("Mean_2393:0", shape=(), dtype=float32)
+loss1:Tensor("mul_568:0", shape=(), dtype=float32)
+loss2:Tensor("Mean_2395:0", shape=(), dtype=float32)
+loss3:Tensor("Mean_2396:0", shape=(), dtype=float32)
+loss1_neuron:Tensor("Mean_2397:0", shape=(), dtype=float32)
+loss2_neuron:Tensor("Mean_2398:0", shape=(), dtype=float32)
+loss2_neuron:Tensor("Mean_2398:0", shape=(), dtype=float32)
+layer_output: Tensor("add_1709:0", shape=(), dtype=float32)
+final_loss: Tensor("Mean_2400:0", shape=(), dtype=float32)
+grads: Tensor("div_283:0", shape=(?, 28, 28, 1), dtype=float32)
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 1.000, 268 neurons 0.955
+averaged covered neurons 0.974
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [1.3918684e-06 1.2306698e-07 3.5660469e-05 5.1974598e-06 9.4722753e-07
+ 2.4197691e-08 2.7121598e-11 9.9865782e-01 1.2551257e-07 1.2986886e-03]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 0
+################### layer_name1, index1: before_softmax, 9
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 0
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 12
+YYYYYYYYYYYYYYYYYYYYYY not covered appears YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+YYYYYYYYYYYYYYYYYYYYYYfc2, 24YYYYYYYYYYYYYYYYYYYYYY
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx model1.get_layer('before_softmax').output[..., orig_label]: Tensor("Mean_2402:0", shape=(), dtype=float32)
+loss1:Tensor("mul_570:0", shape=(), dtype=float32)
+loss2:Tensor("Mean_2404:0", shape=(), dtype=float32)
+loss3:Tensor("Mean_2405:0", shape=(), dtype=float32)
+loss1_neuron:Tensor("Mean_2406:0", shape=(), dtype=float32)
+loss2_neuron:Tensor("Mean_2407:0", shape=(), dtype=float32)
+loss2_neuron:Tensor("Mean_2407:0", shape=(), dtype=float32)
+layer_output: Tensor("add_1715:0", shape=(), dtype=float32)
+final_loss: Tensor("Mean_2409:0", shape=(), dtype=float32)
+grads: Tensor("div_284:0", shape=(?, 28, 28, 1), dtype=float32)
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 1.000, 268 neurons 0.959
+averaged covered neurons 0.976
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [3.1801078e-06 9.9949527e-01 3.9459857e-05 1.2959802e-04 4.4801160e-05
+ 2.1099002e-06 1.1558901e-05 2.1786741e-06 2.7024641e-04 1.5280284e-06]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 0
+################### layer_name1, index1: predictions, 3
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 0
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 11
+YYYYYYYYYYYYYYYYYYYYYY not covered appears YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+YYYYYYYYYYYYYYYYYYYYYYfc2, 4YYYYYYYYYYYYYYYYYYYYYY
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx model1.get_layer('before_softmax').output[..., orig_label]: Tensor("Mean_2411:0", shape=(), dtype=float32)
+loss1:Tensor("mul_572:0", shape=(), dtype=float32)
+loss2:Tensor("Mean_2413:0", shape=(), dtype=float32)
+loss3:Tensor("Mean_2414:0", shape=(), dtype=float32)
+loss1_neuron:Tensor("Mean_2415:0", shape=(), dtype=float32)
+loss2_neuron:Tensor("Mean_2416:0", shape=(), dtype=float32)
+loss2_neuron:Tensor("Mean_2416:0", shape=(), dtype=float32)
+layer_output: Tensor("add_1721:0", shape=(), dtype=float32)
+final_loss: Tensor("Mean_2418:0", shape=(), dtype=float32)
+grads: Tensor("div_285:0", shape=(?, 28, 28, 1), dtype=float32)
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 1.000, 268 neurons 0.959
+averaged covered neurons 0.976
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [1.7759488e-06 9.9970144e-01 8.1142980e-06 5.1961149e-05 1.4403265e-04
+ 2.3288271e-07 2.1654661e-07 4.9137547e-05 3.8950260e-05 4.1469202e-06]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 0
+################### layer_name1, index1: block2_conv1, 3
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 0
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 11
+YYYYYYYYYYYYYYYYYYYYYY not covered appears YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+YYYYYYYYYYYYYYYYYYYYYYfc2, 59YYYYYYYYYYYYYYYYYYYYYY
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx model1.get_layer('before_softmax').output[..., orig_label]: Tensor("Mean_2420:0", shape=(), dtype=float32)
+loss1:Tensor("mul_574:0", shape=(), dtype=float32)
+loss2:Tensor("Mean_2422:0", shape=(), dtype=float32)
+loss3:Tensor("Mean_2423:0", shape=(), dtype=float32)
+loss1_neuron:Tensor("Mean_2424:0", shape=(), dtype=float32)
+loss2_neuron:Tensor("Mean_2425:0", shape=(), dtype=float32)
+loss2_neuron:Tensor("Mean_2425:0", shape=(), dtype=float32)
+layer_output: Tensor("add_1727:0", shape=(), dtype=float32)
+final_loss: Tensor("Mean_2427:0", shape=(), dtype=float32)
+grads: Tensor("div_286:0", shape=(?, 28, 28, 1), dtype=float32)
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 1.000, 268 neurons 0.959
+averaged covered neurons 0.976
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [9.9992394e-01 3.5189476e-11 5.2313200e-05 7.3883016e-10 2.9762874e-09
+ 2.3803601e-09 2.2030194e-05 7.0800144e-07 2.0512906e-07 7.3590593e-07]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 0
+################### layer_name1, index1: before_softmax, 3
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 0
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 11
+YYYYYYYYYYYYYYYYYYYYYY not covered appears YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+YYYYYYYYYYYYYYYYYYYYYYfc2, 79YYYYYYYYYYYYYYYYYYYYYY
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx model1.get_layer('before_softmax').output[..., orig_label]: Tensor("Mean_2429:0", shape=(), dtype=float32)
+loss1:Tensor("mul_576:0", shape=(), dtype=float32)
+loss2:Tensor("Mean_2431:0", shape=(), dtype=float32)
+loss3:Tensor("Mean_2432:0", shape=(), dtype=float32)
+loss1_neuron:Tensor("Mean_2433:0", shape=(), dtype=float32)
+loss2_neuron:Tensor("Mean_2434:0", shape=(), dtype=float32)
+loss2_neuron:Tensor("Mean_2434:0", shape=(), dtype=float32)
+layer_output: Tensor("add_1733:0", shape=(), dtype=float32)
+final_loss: Tensor("Mean_2436:0", shape=(), dtype=float32)
+grads: Tensor("div_287:0", shape=(?, 28, 28, 1), dtype=float32)
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 1.000, 268 neurons 0.959
+averaged covered neurons 0.976
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [4.2971036e-11 1.8107034e-08 3.4643013e-09 1.0683059e-08 9.9996948e-01
+ 7.4093663e-07 9.9366462e-09 2.0391407e-07 2.7863911e-05 1.7408302e-06]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 0
+################### layer_name1, index1: block2_pool1, 6
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 0
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 11
+YYYYYYYYYYYYYYYYYYYYYY not covered appears YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+YYYYYYYYYYYYYYYYYYYYYYfc1, 71YYYYYYYYYYYYYYYYYYYYYY
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx model1.get_layer('before_softmax').output[..., orig_label]: Tensor("Mean_2438:0", shape=(), dtype=float32)
+loss1:Tensor("mul_578:0", shape=(), dtype=float32)
+loss2:Tensor("Mean_2440:0", shape=(), dtype=float32)
+loss3:Tensor("Mean_2441:0", shape=(), dtype=float32)
+loss1_neuron:Tensor("Mean_2442:0", shape=(), dtype=float32)
+loss2_neuron:Tensor("Mean_2443:0", shape=(), dtype=float32)
+loss2_neuron:Tensor("Mean_2443:0", shape=(), dtype=float32)
+layer_output: Tensor("add_1739:0", shape=(), dtype=float32)
+final_loss: Tensor("Mean_2445:0", shape=(), dtype=float32)
+grads: Tensor("div_288:0", shape=(?, 28, 28, 1), dtype=float32)
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 1.000, 268 neurons 0.959
+averaged covered neurons 0.976
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [4.0154691e-07 4.5456400e-06 2.5680836e-06 9.9926978e-01 2.4141459e-08
+ 7.1535195e-04 5.3768070e-11 1.4349391e-07 1.5303142e-06 5.7486614e-06]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 0
+################### layer_name1, index1: block2_conv1, 0
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 0
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 11
+YYYYYYYYYYYYYYYYYYYYYY not covered appears YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+YYYYYYYYYYYYYYYYYYYYYYfc2, 70YYYYYYYYYYYYYYYYYYYYYY
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx model1.get_layer('before_softmax').output[..., orig_label]: Tensor("Mean_2447:0", shape=(), dtype=float32)
+loss1:Tensor("mul_580:0", shape=(), dtype=float32)
+loss2:Tensor("Mean_2449:0", shape=(), dtype=float32)
+loss3:Tensor("Mean_2450:0", shape=(), dtype=float32)
+loss1_neuron:Tensor("Mean_2451:0", shape=(), dtype=float32)
+loss2_neuron:Tensor("Mean_2452:0", shape=(), dtype=float32)
+loss2_neuron:Tensor("Mean_2452:0", shape=(), dtype=float32)
+layer_output: Tensor("add_1745:0", shape=(), dtype=float32)
+final_loss: Tensor("Mean_2454:0", shape=(), dtype=float32)
+grads: Tensor("div_289:0", shape=(?, 28, 28, 1), dtype=float32)
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 1.000, 268 neurons 0.963
+averaged covered neurons 0.979
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [6.6918695e-08 1.4787932e-09 7.1387808e-06 9.9994791e-01 1.8122353e-13
+ 4.2675139e-05 4.1506399e-12 8.8287419e-07 1.4210279e-06 3.6834130e-08]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 0
+################### layer_name1, index1: block2_conv1, 8
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 0
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 10
+YYYYYYYYYYYYYYYYYYYYYY not covered appears YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+YYYYYYYYYYYYYYYYYYYYYYfc2, 72YYYYYYYYYYYYYYYYYYYYYY
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx model1.get_layer('before_softmax').output[..., orig_label]: Tensor("Mean_2456:0", shape=(), dtype=float32)
+loss1:Tensor("mul_582:0", shape=(), dtype=float32)
+loss2:Tensor("Mean_2458:0", shape=(), dtype=float32)
+loss3:Tensor("Mean_2459:0", shape=(), dtype=float32)
+loss1_neuron:Tensor("Mean_2460:0", shape=(), dtype=float32)
+loss2_neuron:Tensor("Mean_2461:0", shape=(), dtype=float32)
+loss2_neuron:Tensor("Mean_2461:0", shape=(), dtype=float32)
+layer_output: Tensor("add_1751:0", shape=(), dtype=float32)
+final_loss: Tensor("Mean_2463:0", shape=(), dtype=float32)
+grads: Tensor("div_290:0", shape=(?, 28, 28, 1), dtype=float32)
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 1.000, 268 neurons 0.963
+averaged covered neurons 0.979
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [9.9984705e-01 2.2065250e-09 8.4521700e-05 2.8741992e-08 7.5151210e-09
+ 2.6676341e-06 3.6489077e-05 7.9159975e-07 1.9013547e-05 9.5105679e-06]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 0
+################### layer_name1, index1: block2_pool1, 9
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 0
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 10
+YYYYYYYYYYYYYYYYYYYYYY not covered appears YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+YYYYYYYYYYYYYYYYYYYYYYfc2, 79YYYYYYYYYYYYYYYYYYYYYY
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx model1.get_layer('before_softmax').output[..., orig_label]: Tensor("Mean_2465:0", shape=(), dtype=float32)
+loss1:Tensor("mul_584:0", shape=(), dtype=float32)
+loss2:Tensor("Mean_2467:0", shape=(), dtype=float32)
+loss3:Tensor("Mean_2468:0", shape=(), dtype=float32)
+loss1_neuron:Tensor("Mean_2469:0", shape=(), dtype=float32)
+loss2_neuron:Tensor("Mean_2470:0", shape=(), dtype=float32)
+loss2_neuron:Tensor("Mean_2470:0", shape=(), dtype=float32)
+layer_output: Tensor("add_1757:0", shape=(), dtype=float32)
+final_loss: Tensor("Mean_2472:0", shape=(), dtype=float32)
+grads: Tensor("div_291:0", shape=(?, 28, 28, 1), dtype=float32)
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 1.000, 268 neurons 0.963
+averaged covered neurons 0.979
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [3.6274344e-06 9.9906415e-01 6.1429331e-05 3.0341724e-04 2.8418413e-05
+ 1.5550687e-06 2.0985722e-07 1.6868318e-04 3.6576216e-04 2.7757653e-06]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 0
+################### layer_name1, index1: block2_conv1, 0
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 0
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 10
+YYYYYYYYYYYYYYYYYYYYYY not covered appears YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+YYYYYYYYYYYYYYYYYYYYYYfc2, 59YYYYYYYYYYYYYYYYYYYYYY
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx model1.get_layer('before_softmax').output[..., orig_label]: Tensor("Mean_2474:0", shape=(), dtype=float32)
+loss1:Tensor("mul_586:0", shape=(), dtype=float32)
+loss2:Tensor("Mean_2476:0", shape=(), dtype=float32)
+loss3:Tensor("Mean_2477:0", shape=(), dtype=float32)
+loss1_neuron:Tensor("Mean_2478:0", shape=(), dtype=float32)
+loss2_neuron:Tensor("Mean_2479:0", shape=(), dtype=float32)
+loss2_neuron:Tensor("Mean_2479:0", shape=(), dtype=float32)
+layer_output: Tensor("add_1763:0", shape=(), dtype=float32)
+final_loss: Tensor("Mean_2481:0", shape=(), dtype=float32)
+grads: Tensor("div_292:0", shape=(?, 28, 28, 1), dtype=float32)
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 1.000, 268 neurons 0.966
+averaged covered neurons 0.981
