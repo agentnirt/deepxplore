@@ -62,9 +62,13 @@ def init_dict(model, model_layer_dict):
 
 
 def neuron_to_cover(model_layer_dict):
+    # print("YYYYYYYYYYYYYYYYYYYYYY model_layer_dict.items()" + str(model_layer_dict.items()))
     not_covered = [(layer_name, index) for (layer_name, index), v in model_layer_dict.items() if not v]
+    print("&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: " + str(len(not_covered)))
     if not_covered:
         layer_name, index = random.choice(not_covered)
+        print("YYYYYYYYYYYYYYYYYYYYYY not covered appears YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY")
+        print("YYYYYYYYYYYYYYYYYYYYYY" + str(layer_name) + ", " + str(index) + "YYYYYYYYYYYYYYYYYYYYYY")
     else:
         layer_name, index = random.choice(model_layer_dict.keys())
     return layer_name, index
@@ -86,7 +90,7 @@ def update_coverage(input_data, model, model_layer_dict, threshold=0):
 
     for i, intermediate_layer_output in enumerate(intermediate_layer_outputs):
         scaled = scale(intermediate_layer_output[0])
-        for num_neuron in xrange(scaled.shape[-1]):
+        for num_neuron in range(scaled.shape[-1]):
             if np.mean(scaled[..., num_neuron]) > threshold and not model_layer_dict[(layer_names[i], num_neuron)]:
                 model_layer_dict[(layer_names[i], num_neuron)] = True
 
