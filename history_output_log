@@ -1,0 +1,443 @@
+#!/usr/bin/env python2
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Feb 28 14:35:58 2018
+
+@author: sarah
+"""
+
+
+runfile('/home/sarah/virtualenvs/activate/deepxplore/MNIST/gen_diff.py', args='blackout 1 0.1 10 20 50 0', wdir='/home/sarah/virtualenvs/activate/deepxplore/MNIST')
+Reloaded modules: configs, Model1, Model2, Model3, utils1
+Model1 loaded
+Model2 loaded
+Model3 loaded
+the overall seeds is: 20
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [7.7251366e-07 3.9567510e-04 5.7224656e-04 7.2668185e-03 2.2649092e-03
+ 3.5439956e-04 2.7770179e-07 5.5895525e-06 9.5917898e-01 2.9960347e-02]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: [('block2_conv1', 9), ('block2_pool1', 7), ('block1_conv1', 3), ('predictions', 6), ('predictions', 1), ('block2_conv1', 6), ('block1_pool1', 0), ('block2_pool1', 11), ('before_softmax', 0), ('block2_pool1', 2), ('predictions', 9), ('block2_conv1', 1), ('before_softmax', 8), ('before_softmax', 3), ('block2_conv1', 8), ('block2_pool1', 6), ('block1_conv1', 0), ('block2_conv1', 5), ('before_softmax', 6), ('block1_pool1', 1), ('predictions', 3), ('block2_pool1', 10), ('block2_pool1', 1), ('predictions', 0), ('block2_conv1', 0), ('before_softmax', 9), ('block2_pool1', 5), ('block1_conv1', 1), ('before_softmax', 1), ('block2_conv1', 4), ('predictions', 8), ('block2_conv1', 11), ('block2_pool1', 9), ('before_softmax', 4), ('block2_pool1', 0), ('predictions', 5), ('block1_pool1', 2), ('before_softmax', 7), ('predictions', 2), ('block2_pool1', 4), ('block2_conv1', 3), ('block2_conv1', 10), ('block2_pool1', 8), ('block1_conv1', 2), ('block2_conv1', 7), ('before_softmax', 2), ('block1_pool1', 3), ('predictions', 7), ('block2_pool1', 3), ('before_softmax', 5), ('block2_conv1', 2), ('predictions', 4)]
+################### layer_name1, index1: predictions, 2
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: [('predictions', 1), ('block1_conv1', 3), ('fc1', 57), ('block2_pool1', 10), ('fc1', 46), ('before_softmax', 5), ('fc1', 29), ('before_softmax', 8), ('block2_pool1', 4), ('block1_pool1', 5), ('block2_pool1', 6), ('block2_conv1', 5), ('fc1', 76), ('fc1', 55), ('predictions', 4), ('block1_conv1', 4), ('fc1', 36), ('fc1', 41), ('before_softmax', 2), ('fc1', 24), ('block2_conv1', 11), ('fc1', 13), ('block2_conv1', 13), ('fc1', 50), ('predictions', 7), ('fc1', 39), ('fc1', 15), ('fc1', 22), ('fc1', 79), ('fc1', 80), ('fc1', 27), ('fc1', 1), ('block2_conv1', 14), ('fc1', 69), ('fc1', 8), ('fc1', 74), ('fc1', 61), ('fc1', 34), ('fc1', 17), ('fc1', 83), ('block2_pool1', 2), ('block2_conv1', 1), ('fc1', 64), ('block2_pool1', 15), ('predictions', 0), ('block1_conv1', 0), ('fc1', 56), ('fc1', 45), ('block2_pool1', 12), ('before_softmax', 6), ('block2_conv1', 8), ('fc1', 28), ('before_softmax', 9), ('block2_pool1', 5), ('fc1', 2), ('block2_conv1', 4), ('fc1', 67), ('fc1', 54), ('predictions', 3), ('block1_conv1', 5), ('fc1', 59), ('fc1', 40), ('fc1', 4), ('before_softmax', 3), ('fc1', 31), ('block2_conv1', 10), ('fc1', 12), ('block2_conv1', 7), ('fc1', 78), ('fc1', 49), ('predictions', 6), ('block2_conv1', 15), ('fc1', 38), ('fc1', 43), ('fc1', 9), ('fc1', 21), ('before_softmax', 0), ('block2_conv1', 9), ('fc1', 26), ('block1_pool1', 0), ('fc1', 68), ('block2_pool1', 11), ('fc1', 3), ('fc1', 73), ('fc1', 60), ('predictions', 9), ('fc1', 33), ('block2_pool1', 1), ('fc1', 16), ('fc1', 82), ('fc1', 5), ('block2_conv1', 0), ('fc1', 71), ('block2_pool1', 14), ('block1_conv1', 1), ('fc1', 63), ('fc1', 44), ('before_softmax', 7), ('fc1', 10), ('fc1', 19), ('fc1', 0), ('block2_conv1', 3), ('fc1', 66), ('fc1', 53), ('predictions', 2), ('block2_pool1', 8), ('block1_conv1', 2), ('fc1', 58), ('fc1', 47), ('before_softmax', 4), ('fc1', 6), ('fc1', 30), ('block1_pool1', 4), ('block2_pool1', 7), ('block2_conv1', 6), ('fc1', 77), ('fc1', 48), ('predictions', 5), ('fc1', 37), ('fc1', 42), ('block1_pool1', 3), ('fc1', 20), ('before_softmax', 1), ('fc1', 11), ('fc1', 25), ('block1_pool1', 1), ('fc1', 14), ('fc1', 72), ('fc1', 51), ('predictions', 8), ('block2_pool1', 9), ('fc1', 32), ('fc1', 23), ('block2_pool1', 3), ('fc1', 81), ('block2_pool1', 0), ('block1_pool1', 2), ('fc1', 70), ('block2_pool1', 13), ('fc1', 75), ('fc1', 62), ('fc1', 35), ('fc1', 65), ('fc1', 18), ('fc1', 7), ('block2_conv1', 2), ('block2_conv1', 12), ('fc1', 52)]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: [('fc2', 68), ('fc2', 30), ('block1_conv1', 3), ('fc1', 57), ('fc2', 80), ('block2_pool1', 10), ('fc2', 62), ('fc1', 46), ('fc2', 52), ('fc1', 104), ('before_softmax', 5), ('fc2', 24), ('fc1', 29), ('fc2', 42), ('block2_pool1', 4), ('block1_pool1', 5), ('fc1', 95), ('block2_pool1', 6), ('fc2', 28), ('block2_conv1', 5), ('fc1', 76), ('fc1', 55), ('fc2', 26), ('predictions', 4), ('fc1', 87), ('block1_conv1', 4), ('fc1', 36), ('fc2', 36), ('fc2', 7), ('fc1', 102), ('fc1', 41), ('fc2', 71), ('fc2', 48), ('fc1', 107), ('fc1', 113), ('fc1', 85), ('fc1', 24), ('block2_conv1', 11), ('fc1', 90), ('fc1', 13), ('fc2', 49), ('block2_conv1', 13), ('fc1', 50), ('before_softmax', 9), ('predictions', 7), ('fc2', 78), ('fc2', 1), ('fc2', 57), ('fc1', 39), ('fc2', 83), ('fc1', 15), ('fc1', 97), ('fc2', 73), ('fc1', 22), ('fc1', 79), ('fc1', 117), ('fc1', 80), ('fc1', 27), ('fc2', 45), ('fc1', 1), ('block2_conv1', 14), ('fc1', 69), ('fc1', 8), ('fc2', 77), ('fc1', 74), ('fc1', 61), ('fc2', 21), ('fc2', 12), ('fc1', 34), ('fc2', 39), ('fc2', 70), ('before_softmax', 7), ('fc1', 108), ('fc2', 64), ('fc2', 69), ('fc1', 17), ('fc2', 18), ('fc2', 8), ('fc1', 83), ('block2_pool1', 2), ('fc2', 33), ('fc2', 53), ('block2_conv1', 1), ('fc1', 64), ('block2_pool1', 15), ('predictions', 0), ('block1_conv1', 0), ('fc1', 56), ('before_softmax', 8), ('fc2', 0), ('fc2', 63), ('fc1', 45), ('fc2', 82), ('block2_pool1', 12), ('fc1', 111), ('before_softmax', 6), ('fc2', 27), ('block2_conv1', 8), ('fc1', 28), ('fc2', 65), ('fc2', 4), ('fc1', 94), ('block2_pool1', 5), ('fc2', 44), ('fc2', 74), ('fc1', 2), ('block2_conv1', 4), ('fc1', 67), ('fc1', 54), ('fc2', 55), ('predictions', 3), ('fc1', 112), ('block1_conv1', 5), ('fc1', 59), ('fc2', 20), ('fc1', 101), ('fc1', 40), ('fc2', 38), ('fc1', 4), ('fc2', 58), ('fc1', 106), ('before_softmax', 3), ('fc2', 29), ('fc1', 84), ('fc1', 31), ('before_softmax', 4), ('block2_conv1', 10), ('fc1', 89), ('fc1', 12), ('fc2', 32), ('block2_conv1', 7), ('fc1', 78), ('fc1', 49), ('fc2', 13), ('predictions', 6), ('block2_conv1', 15), ('fc1', 38), ('fc2', 54), ('fc2', 3), ('fc1', 96), ('fc1', 43), ('fc1', 9), ('fc1', 21), ('before_softmax', 0), ('block2_conv1', 9), ('fc1', 26), ('fc2', 19), ('block1_pool1', 0), ('fc1', 68), ('block2_pool1', 11), ('fc2', 47), ('fc1', 3), ('fc1', 73), ('fc1', 60), ('fc2', 66), ('predictions', 9), ('fc1', 115), ('fc2', 9), ('fc2', 59), ('fc1', 33), ('fc2', 79), ('fc2', 23), ('fc1', 99), ('fc2', 41), ('block2_pool1', 1), ('fc1', 16), ('fc2', 11), ('fc1', 82), ('fc1', 5), ('fc2', 17), ('block2_conv1', 0), ('fc1', 71), ('block2_pool1', 14), ('fc2', 35), ('block1_conv1', 1), ('fc1', 63), ('fc2', 75), ('fc2', 37), ('predictions', 1), ('fc2', 60), ('fc1', 44), ('fc2', 2), ('fc1', 110), ('fc2', 14), ('fc1', 10), ('fc1', 19), ('before_softmax', 2), ('fc2', 50), ('fc1', 93), ('fc1', 0), ('block2_conv1', 3), ('fc1', 66), ('fc1', 53), ('fc2', 46), ('predictions', 2), ('block2_pool1', 8), ('block1_conv1', 2), ('fc1', 58), ('fc1', 100), ('fc1', 47), ('fc2', 22), ('fc1', 105), ('fc2', 40), ('fc1', 6), ('fc2', 10), ('fc1', 30), ('block1_pool1', 4), ('fc1', 88), ('block2_pool1', 7), ('fc2', 16), ('block2_conv1', 6), ('fc1', 77), ('fc1', 48), ('fc2', 34), ('predictions', 5), ('fc1', 114), ('fc1', 37), ('fc1', 103), ('fc1', 42), ('block1_pool1', 3), ('fc2', 5), ('fc1', 20), ('before_softmax', 1), ('fc2', 67), ('fc1', 11), ('fc1', 86), ('fc1', 25), ('fc2', 6), ('fc1', 119), ('block1_pool1', 1), ('fc1', 91), ('fc1', 14), ('fc2', 51), ('fc2', 31), ('fc1', 72), ('fc1', 51), ('fc2', 81), ('predictions', 8), ('block2_pool1', 9), ('fc2', 56), ('fc1', 32), ('fc1', 98), ('fc2', 25), ('fc1', 23), ('fc2', 43), ('block2_pool1', 3), ('fc1', 81), ('block2_pool1', 0), ('block1_pool1', 2), ('fc1', 70), ('block2_pool1', 13), ('fc2', 72), ('fc2', 15), ('fc1', 75), ('fc1', 62), ('fc1', 116), ('fc1', 118), ('fc2', 61), ('fc1', 35), ('fc1', 109), ('fc2', 76), ('fc1', 65), ('fc1', 18), ('fc1', 92), ('fc1', 7), ('block2_conv1', 2), ('block2_conv1', 12), ('fc1', 52)]
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 0.962, 148 neurons 0.845, 268 neurons 0.653
+averaged covered neurons 0.748
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [9.1140649e-08 7.2973940e-08 3.5187725e-02 9.6459246e-01 3.3123566e-11
+ 5.6127426e-08 1.0004483e-10 7.3112710e-06 2.1223289e-04 4.4294211e-08]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: [('before_softmax', 7), ('predictions', 7)]
+################### layer_name1, index1: before_softmax, 7
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: [('fc1', 57), ('fc1', 76), ('fc1', 36), ('fc1', 41), ('fc1', 13), ('fc1', 15), ('fc1', 1), ('fc1', 8), ('fc1', 74), ('fc1', 61), ('before_softmax', 6), ('fc1', 59), ('fc1', 4), ('predictions', 6), ('fc1', 63), ('fc1', 10), ('fc1', 6), ('fc1', 25), ('fc1', 14), ('fc1', 23), ('fc1', 62), ('fc1', 65), ('fc1', 7)]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: [('fc1', 57), ('fc1', 46), ('fc2', 24), ('fc2', 28), ('fc1', 87), ('fc2', 36), ('fc2', 71), ('fc1', 107), ('fc1', 113), ('fc1', 85), ('fc1', 90), ('fc1', 13), ('fc2', 49), ('fc2', 78), ('fc2', 57), ('fc1', 39), ('fc1', 15), ('fc1', 79), ('fc2', 45), ('fc1', 69), ('fc1', 8), ('fc1', 61), ('fc2', 70), ('fc2', 69), ('fc1', 17), ('fc2', 18), ('fc2', 8), ('fc2', 33), ('fc2', 0), ('before_softmax', 6), ('fc2', 27), ('fc1', 28), ('fc2', 4), ('fc1', 94), ('fc1', 67), ('fc1', 54), ('fc1', 59), ('fc1', 101), ('fc2', 38), ('fc1', 4), ('fc1', 84), ('fc1', 31), ('fc1', 89), ('fc1', 12), ('fc2', 32), ('fc1', 78), ('fc1', 49), ('fc2', 13), ('predictions', 6), ('fc2', 54), ('fc1', 96), ('fc1', 21), ('fc2', 19), ('fc1', 68), ('fc1', 3), ('fc1', 60), ('fc2', 59), ('fc1', 33), ('fc2', 79), ('fc2', 41), ('fc1', 71), ('fc2', 35), ('fc1', 63), ('fc2', 60), ('fc1', 44), ('fc1', 110), ('fc1', 19), ('fc1', 66), ('fc1', 53), ('fc2', 40), ('fc2', 16), ('fc1', 77), ('fc1', 48), ('fc2', 34), ('fc1', 103), ('fc1', 42), ('fc1', 25), ('fc2', 6), ('fc1', 119), ('fc1', 14), ('fc2', 51), ('fc1', 51), ('fc1', 32), ('fc2', 43), ('fc2', 72), ('fc1', 116), ('fc1', 118), ('fc2', 61), ('fc2', 76), ('fc1', 65), ('fc1', 92), ('fc1', 7), ('fc1', 52)]
+the overall grad iterations is: 50
+/home/sarah/virtualenvs/activate/deepxplore/MNIST/gen_diff.py:205: DeprecationWarning: `imsave` is deprecated!
+`imsave` is deprecated in SciPy 1.0.0, and will be removed in 1.2.0.
+Use ``imageio.imwrite`` instead.
+  
+/home/sarah/virtualenvs/activate/deepxplore/MNIST/gen_diff.py:208: DeprecationWarning: `imsave` is deprecated!
+`imsave` is deprecated in SciPy 1.0.0, and will be removed in 1.2.0.
+Use ``imageio.imwrite`` instead.
+  predictions2) + '_' + str(predictions3) + '.png',
+covered neurons percentage 52 neurons 1.000, 148 neurons 0.926, 268 neurons 0.851
+averaged covered neurons 0.891
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [8.5936208e-06 1.3260810e-11 4.6179892e-05 1.3168856e-08 1.8238757e-06
+ 8.8251814e-05 9.9983728e-01 5.2193277e-10 1.7915650e-05 1.6450838e-10]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: []
+################### layer_name1, index1: block2_pool1, 0
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: [('fc1', 57), ('fc1', 76), ('fc1', 36), ('fc1', 13), ('fc1', 8), ('fc1', 61), ('fc1', 6), ('fc1', 14), ('fc1', 23), ('fc1', 62), ('fc1', 7)]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: [('fc2', 24), ('fc2', 71), ('fc1', 90), ('fc2', 49), ('fc2', 78), ('fc2', 57), ('fc1', 61), ('fc2', 70), ('fc2', 18), ('fc2', 8), ('fc1', 28), ('fc2', 4), ('fc1', 67), ('fc1', 54), ('fc1', 59), ('fc2', 38), ('fc1', 84), ('fc1', 49), ('fc2', 13), ('fc1', 3), ('fc1', 60), ('fc2', 59), ('fc1', 33), ('fc2', 79), ('fc2', 41), ('fc1', 71), ('fc1', 63), ('fc2', 60), ('fc1', 110), ('fc1', 19), ('fc1', 53), ('fc1', 42), ('fc1', 25), ('fc2', 6), ('fc1', 119), ('fc2', 72), ('fc1', 116), ('fc1', 65), ('fc1', 92), ('fc1', 7)]
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 0.973, 268 neurons 0.903
+averaged covered neurons 0.936
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [5.6615527e-06 1.0670957e-08 7.9636884e-06 4.0916592e-07 1.7074524e-05
+ 1.5241635e-03 9.9835289e-01 6.9466417e-08 9.1347560e-05 4.4242014e-07]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: []
+################### layer_name1, index1: block1_conv1, 2
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: [('fc1', 76), ('fc1', 13), ('fc1', 6), ('fc1', 62)]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: [('fc2', 24), ('fc2', 71), ('fc2', 49), ('fc2', 57), ('fc2', 8), ('fc1', 28), ('fc2', 4), ('fc1', 67), ('fc1', 84), ('fc1', 49), ('fc2', 13), ('fc1', 3), ('fc1', 60), ('fc2', 59), ('fc1', 33), ('fc2', 79), ('fc2', 41), ('fc1', 71), ('fc2', 60), ('fc1', 110), ('fc1', 19), ('fc1', 119), ('fc2', 72), ('fc1', 116), ('fc1', 92), ('fc1', 7)]
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 0.980, 268 neurons 0.918
+averaged covered neurons 0.947
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [2.1495784e-06 6.6992175e-13 9.9999309e-01 6.1309618e-07 4.8748784e-16
+ 3.3653208e-10 1.1869099e-11 1.2586384e-08 4.2072015e-06 1.8026816e-09]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: []
+################### layer_name1, index1: predictions, 5
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: [('fc1', 76), ('fc1', 13), ('fc1', 62)]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: [('fc2', 24), ('fc2', 71), ('fc2', 49), ('fc2', 57), ('fc2', 8), ('fc1', 28), ('fc2', 4), ('fc1', 67), ('fc2', 13), ('fc1', 3), ('fc2', 59), ('fc1', 33), ('fc2', 79), ('fc2', 41), ('fc1', 71), ('fc2', 60), ('fc1', 19), ('fc1', 119), ('fc2', 72), ('fc1', 116), ('fc1', 92), ('fc1', 7)]
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 0.980, 268 neurons 0.940
+averaged covered neurons 0.959
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [5.5710712e-05 9.9606198e-01 6.8292994e-04 5.6028721e-06 8.4595848e-04
+ 7.9258051e-08 1.5440959e-05 2.1985716e-03 1.2345366e-04 1.0198963e-05]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: []
+################### layer_name1, index1: block2_pool1, 11
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: [('fc1', 76), ('fc1', 13), ('fc1', 62)]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: [('fc2', 24), ('fc2', 71), ('fc2', 49), ('fc2', 57), ('fc1', 28), ('fc2', 4), ('fc2', 13), ('fc2', 59), ('fc1', 33), ('fc2', 41), ('fc1', 71), ('fc2', 60), ('fc1', 19), ('fc2', 72), ('fc1', 116), ('fc1', 7)]
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 0.980, 268 neurons 0.944
+averaged covered neurons 0.962
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [4.0031937e-06 9.9965203e-01 7.3885371e-05 6.1065782e-07 2.2080555e-04
+ 2.9455562e-09 8.7021635e-07 3.5937221e-05 1.1587028e-05 2.2915441e-07]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: []
+################### layer_name1, index1: block2_pool1, 7
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: [('fc1', 76), ('fc1', 13), ('fc1', 62)]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: [('fc2', 24), ('fc2', 71), ('fc2', 49), ('fc1', 28), ('fc2', 4), ('fc2', 13), ('fc2', 59), ('fc1', 33), ('fc2', 41), ('fc1', 71), ('fc2', 60), ('fc1', 19), ('fc2', 72), ('fc1', 116), ('fc1', 7)]
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 0.980, 268 neurons 0.951
+averaged covered neurons 0.966
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [1.2687326e-05 9.9883062e-01 2.2580276e-05 1.4026236e-04 7.6702394e-04
+ 6.1209619e-07 1.5988886e-06 8.4760504e-05 2.6139078e-05 1.1380088e-04]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: []
+################### layer_name1, index1: before_softmax, 6
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: [('fc1', 76), ('fc1', 13), ('fc1', 62)]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: [('fc2', 24), ('fc2', 71), ('fc2', 49), ('fc1', 28), ('fc2', 4), ('fc2', 13), ('fc2', 59), ('fc1', 33), ('fc2', 41), ('fc2', 60), ('fc1', 19), ('fc2', 72), ('fc1', 116)]
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 0.993, 268 neurons 0.959
+averaged covered neurons 0.974
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [2.1931949e-07 5.3432530e-07 9.9254793e-01 7.4509094e-03 9.2984583e-13
+ 4.8931543e-09 6.7907120e-09 4.5937785e-11 3.4445080e-07 6.9634362e-14]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: []
+################### layer_name1, index1: predictions, 7
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: [('fc1', 13)]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: [('fc2', 71), ('fc2', 49), ('fc1', 28), ('fc2', 4), ('fc2', 13), ('fc2', 59), ('fc1', 33), ('fc2', 41), ('fc1', 19), ('fc2', 72), ('fc1', 116)]
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 0.993, 268 neurons 0.959
+averaged covered neurons 0.974
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [3.1479046e-09 3.8386887e-11 7.0425145e-11 2.6022389e-09 4.6735472e-06
+ 4.5201230e-07 9.3473554e-12 9.9999404e-01 3.1886216e-09 8.2126195e-07]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: []
+################### layer_name1, index1: predictions, 8
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: [('fc1', 13)]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: [('fc2', 71), ('fc2', 49), ('fc1', 28), ('fc2', 4), ('fc2', 13), ('fc2', 59), ('fc1', 33), ('fc2', 41), ('fc1', 19), ('fc2', 72), ('fc1', 116)]
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 0.993, 268 neurons 0.963
+averaged covered neurons 0.976
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [2.2822207e-05 1.9956192e-07 9.9400228e-01 4.4021467e-03 1.0440469e-07
+ 1.1878752e-05 2.6629010e-07 8.1424147e-04 7.0500810e-04 4.1154279e-05]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: []
+################### layer_name1, index1: block1_conv1, 3
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: [('fc1', 13)]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: [('fc2', 71), ('fc2', 49), ('fc1', 28), ('fc2', 4), ('fc2', 59), ('fc1', 33), ('fc2', 41), ('fc1', 19), ('fc2', 72), ('fc1', 116)]
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 0.993, 268 neurons 0.963
+averaged covered neurons 0.976
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [2.1489415e-08 6.2568687e-12 7.0505677e-09 6.4811360e-07 4.1444650e-06
+ 8.5860236e-08 1.7117150e-11 1.1429304e-03 5.9062705e-07 9.9885154e-01]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: []
+################### layer_name1, index1: block2_conv1, 0
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: [('fc1', 13)]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: [('fc2', 71), ('fc2', 49), ('fc1', 28), ('fc2', 4), ('fc2', 59), ('fc1', 33), ('fc2', 41), ('fc1', 19), ('fc2', 72), ('fc1', 116)]
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 0.993, 268 neurons 0.963
+averaged covered neurons 0.976
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [3.0591794e-13 7.8171527e-16 6.5761596e-10 8.2262042e-05 3.2293706e-16
+ 9.9991679e-01 1.8384027e-11 1.7460102e-12 7.4485081e-07 2.2644703e-07]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: []
+################### layer_name1, index1: block2_pool1, 5
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: [('fc1', 13)]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: [('fc2', 71), ('fc2', 49), ('fc1', 28), ('fc2', 4), ('fc2', 59), ('fc1', 33), ('fc2', 41), ('fc1', 19), ('fc2', 72), ('fc1', 116)]
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 0.993, 268 neurons 0.963
+averaged covered neurons 0.976
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [5.9408500e-05 4.9732705e-07 4.2851202e-06 8.4578223e-06 2.6363708e-04
+ 1.0317538e-03 9.9861729e-01 1.0250267e-07 1.2027652e-05 2.4772810e-06]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: []
+################### layer_name1, index1: block2_pool1, 4
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: [('fc1', 13)]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: [('fc2', 71), ('fc2', 49), ('fc1', 28), ('fc2', 4), ('fc2', 59), ('fc1', 33), ('fc2', 41), ('fc1', 19), ('fc2', 72), ('fc1', 116)]
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 0.993, 268 neurons 0.963
+averaged covered neurons 0.976
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [6.7722028e-10 1.0052958e-09 8.5029989e-10 3.3336068e-08 9.9952066e-01
+ 2.4387688e-07 9.5589439e-09 1.4704447e-06 2.1868648e-06 4.7533444e-04]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: []
+################### layer_name1, index1: block2_conv1, 10
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: [('fc1', 13)]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: [('fc2', 71), ('fc2', 49), ('fc1', 28), ('fc2', 4), ('fc2', 59), ('fc1', 33), ('fc2', 41), ('fc1', 19), ('fc2', 72), ('fc1', 116)]
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 0.993, 268 neurons 0.963
+averaged covered neurons 0.976
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [1.5442604e-04 6.4614227e-07 9.6423882e-01 2.8544287e-03 3.9260928e-10
+ 6.7610279e-05 2.8728610e-07 5.5645254e-05 3.2246504e-02 3.8166327e-04]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: []
+################### layer_name1, index1: predictions, 6
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: [('fc1', 13)]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: [('fc2', 71), ('fc2', 49), ('fc1', 28), ('fc2', 4), ('fc2', 59), ('fc1', 33), ('fc2', 41), ('fc1', 19), ('fc2', 72), ('fc1', 116)]
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 0.993, 268 neurons 0.963
+averaged covered neurons 0.976
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [7.0425781e-04 7.9881446e-04 1.3000572e-04 3.6344511e-04 9.5369979e-09
+ 9.6030951e-01 3.5635192e-02 7.1595485e-09 2.0569931e-03 1.7821690e-06]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: []
+################### layer_name1, index1: block2_pool1, 1
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: [('fc1', 13)]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: [('fc2', 71), ('fc2', 49), ('fc1', 28), ('fc2', 4), ('fc2', 59), ('fc1', 33), ('fc2', 41), ('fc1', 19), ('fc2', 72), ('fc1', 116)]
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 0.993, 268 neurons 0.963
+averaged covered neurons 0.976
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [3.8315479e-10 1.1724739e-07 2.3756084e-09 3.3963008e-09 9.9998176e-01
+ 6.2139139e-07 3.1296306e-09 1.4277990e-06 1.5443953e-07 1.5909493e-05]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: []
+################### layer_name1, index1: before_softmax, 0
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: [('fc1', 13)]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: [('fc2', 71), ('fc2', 49), ('fc1', 28), ('fc2', 4), ('fc2', 59), ('fc1', 33), ('fc2', 41), ('fc1', 19), ('fc2', 72), ('fc1', 116)]
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 0.993, 268 neurons 0.966
+averaged covered neurons 0.979
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [2.7445330e-09 7.7091894e-10 9.9809319e-01 1.9061362e-03 8.5760981e-09
+ 8.9718482e-09 1.1827020e-11 7.0439182e-07 5.9110498e-08 1.2036072e-10]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: []
+################### layer_name1, index1: before_softmax, 5
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: [('fc1', 13)]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: [('fc2', 71), ('fc2', 49), ('fc1', 28), ('fc2', 4), ('fc2', 59), ('fc1', 33), ('fc2', 41), ('fc2', 72), ('fc1', 116)]
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 0.993, 268 neurons 0.966
+averaged covered neurons 0.979
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [8.05674277e-12 1.35556330e-10 1.27851266e-07 9.99984860e-01
+ 8.62447093e-12 1.27739995e-05 4.29111228e-13 6.61695920e-10
+ 2.30165983e-06 1.75130594e-08]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: []
+################### layer_name1, index1: before_softmax, 4
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: [('fc1', 13)]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered is: [('fc2', 71), ('fc2', 49), ('fc1', 28), ('fc2', 4), ('fc2', 59), ('fc1', 33), ('fc2', 41), ('fc2', 72), ('fc1', 116)]
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 0.993, 268 neurons 0.970
+averaged covered neurons 0.981
+
+
+
+
+
+runfile('/home/sarah/virtualenvs/activate/deepxplore/MNIST/gen_diff.py', args='blackout 1 0.1 10 20 50 0', wdir='/home/sarah/virtualenvs/activate/deepxplore/MNIST')
+Reloaded modules: configs, Model1, Model2, Model3
+Model1 loaded
+Model2 loaded
+Model3 loaded
+the overall seeds is: 20
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [1.1473676e-09 1.2867262e-05 7.0616364e-02 4.1839826e-01 9.3933668e-05
+ 9.6373087e-06 1.6726325e-09 5.1082063e-01 4.8349360e-05 5.9776921e-09]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 52
+################### layer_name1, index1: predictions, 3
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 148
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 268
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 0.962, 148 neurons 0.791, 268 neurons 0.668
+averaged covered neurons 0.739
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [6.6854479e-04 9.6764743e-01 2.5171274e-04 3.9008685e-04 5.0039398e-03
+ 2.4494508e-05 2.3362687e-02 9.5453915e-06 2.6303483e-03 1.1344117e-05]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 2
+################### layer_name1, index1: predictions, 9
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 31
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 89
+the overall grad iterations is: 50
+/home/sarah/virtualenvs/activate/deepxplore/MNIST/gen_diff.py:205: DeprecationWarning: `imsave` is deprecated!
+`imsave` is deprecated in SciPy 1.0.0, and will be removed in 1.2.0.
+Use ``imageio.imwrite`` instead.
+  gen_img_deprocessed)
+/home/sarah/virtualenvs/activate/deepxplore/MNIST/gen_diff.py:208: DeprecationWarning: `imsave` is deprecated!
+`imsave` is deprecated in SciPy 1.0.0, and will be removed in 1.2.0.
+Use ``imageio.imwrite`` instead.
+  orig_img_deprocessed)
+covered neurons percentage 52 neurons 0.962, 148 neurons 0.905, 268 neurons 0.813
+averaged covered neurons 0.859
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [2.6561447e-06 1.5591440e-06 1.0353983e-05 7.7123893e-04 2.0366372e-01
+ 3.2257405e-05 5.2673556e-07 2.4085043e-03 2.5181485e-05 7.9308397e-01]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 2
+################### layer_name1, index1: before_softmax, 9
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 14
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 50
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 0.973, 268 neurons 0.881
+averaged covered neurons 0.923
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [7.5027805e-05 1.4443007e-08 1.4965374e-03 4.3560530e-04 6.6482811e-05
+ 2.5958547e-02 9.9570821e-07 5.0412714e-02 4.3492657e-03 9.1720474e-01]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 0
+################### layer_name1, index1: block2_pool1, 10
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 4
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 32
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 0.973, 268 neurons 0.892
+averaged covered neurons 0.929
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [8.1448599e-09 6.5713179e-10 3.2827156e-05 1.7178264e-04 6.7678663e-08
+ 2.9871697e-04 3.2633722e-07 1.0474038e-08 9.9929309e-01 2.0306351e-04]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 0
+################### layer_name1, index1: block1_pool1, 2
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 4
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 29
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 0.986, 268 neurons 0.929
+averaged covered neurons 0.955
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [1.2873269e-10 5.2979725e-11 1.6238031e-09 9.9995995e-01 2.8934294e-12
+ 3.3226006e-05 2.8252437e-16 6.2549508e-09 1.4330402e-08 6.7399033e-06]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 0
+################### layer_name1, index1: block2_conv1, 10
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 2
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 19
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 0.986, 268 neurons 0.940
+averaged covered neurons 0.962
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [9.9035411e-08 3.2419546e-11 1.0326062e-07 2.2743372e-06 1.6589955e-04
+ 6.2768891e-07 2.3883903e-10 6.3480699e-04 1.5824955e-05 9.9918038e-01]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 0
+################### layer_name1, index1: block2_pool1, 2
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 2
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 16
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 0.993, 268 neurons 0.944
+averaged covered neurons 0.966
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [9.9994862e-01 1.6541624e-10 7.4655463e-06 1.0218097e-09 1.3196945e-09
+ 6.0122288e-06 3.2063872e-06 1.9653513e-07 2.0397985e-05 1.4062903e-05]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 0
+################### layer_name1, index1: block2_pool1, 10
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 1
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 15
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 0.993, 268 neurons 0.944
+averaged covered neurons 0.966
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [3.0915231e-05 9.9843198e-01 2.4112240e-05 3.3334934e-04 7.1045855e-04
+ 9.9811905e-06 1.0699966e-05 8.3817962e-05 3.3432644e-04 3.0299529e-05]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 0
+################### layer_name1, index1: block2_pool1, 9
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 1
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 15
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 0.993, 268 neurons 0.944
+averaged covered neurons 0.966
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [1.0202581e-07 2.4113087e-09 6.8188245e-07 9.7206419e-07 2.1899758e-09
+ 1.7303340e-04 5.0469843e-08 3.8963917e-09 9.9982220e-01 2.9447224e-06]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 0
+################### layer_name1, index1: before_softmax, 2
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 1
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 15
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 0.993, 268 neurons 0.944
+averaged covered neurons 0.966
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [3.4225434e-09 1.0996893e-06 6.9980672e-07 1.0548115e-05 9.9823332e-01
+ 8.8096880e-05 3.5490905e-07 1.4780525e-05 2.8861332e-05 1.6222298e-03]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 0
+################### layer_name1, index1: predictions, 5
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 1
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 15
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 0.993, 268 neurons 0.951
+averaged covered neurons 0.970
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [1.0397477e-07 5.8234653e-11 4.5562371e-07 4.0562142e-04 1.5657779e-11
+ 9.9957782e-01 9.0335197e-06 4.6273796e-12 6.5196377e-06 3.6132320e-07]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 0
+################### layer_name1, index1: before_softmax, 2
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 1
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 13
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 0.993, 268 neurons 0.951
+averaged covered neurons 0.970
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [2.4136514e-03 8.4344665e-06 4.5295665e-04 3.5975907e-02 7.2996528e-04
+ 9.5087785e-01 4.1174266e-04 3.9817137e-06 1.7575729e-04 8.9498954e-03]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 0
+################### layer_name1, index1: block2_pool1, 6
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 1
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 13
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 0.993, 268 neurons 0.959
+averaged covered neurons 0.974
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [8.7850111e-07 2.9232851e-05 1.0446516e-06 2.5123640e-04 4.1619730e-03
+ 1.0516524e-05 2.6432683e-09 1.6120568e-04 7.7139196e-04 9.9461257e-01]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 0
+################### layer_name1, index1: block1_pool1, 2
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 1
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 11
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 0.993, 268 neurons 0.959
+averaged covered neurons 0.974
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [2.8830787e-04 4.9601802e-08 2.8323563e-04 6.2005270e-06 1.1264968e-06
+ 2.9423827e-02 9.6972692e-01 1.7468087e-06 2.6774735e-04 8.1684027e-07]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 0
+################### layer_name1, index1: block2_pool1, 7
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 1
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 11
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 1.000, 268 neurons 0.959
+averaged covered neurons 0.976
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [6.1233158e-07 8.2573882e-07 3.4310174e-06 1.6372160e-06 1.7193183e-07
+ 3.5333156e-04 9.9943966e-01 4.6373887e-11 2.0025282e-04 1.7347633e-08]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 0
+################### layer_name1, index1: block2_conv1, 2
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 0
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 11
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 1.000, 268 neurons 0.959
+averaged covered neurons 0.976
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [2.2025510e-04 9.9722940e-01 2.2476810e-04 6.7969660e-05 9.6843234e-04
+ 3.9509732e-06 5.0057692e-04 1.7280225e-04 6.0426467e-04 7.5783596e-06]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 0
+################### layer_name1, index1: before_softmax, 9
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 0
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 11
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 1.000, 268 neurons 0.959
+averaged covered neurons 0.976
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [5.2113566e-05 8.9658015e-06 5.0223707e-06 1.2459046e-06 8.3516875e-07
+ 1.4671779e-04 9.9972171e-01 9.3108605e-09 6.3352782e-05 1.5729318e-09]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 0
+################### layer_name1, index1: block2_conv1, 8
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 0
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 11
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 1.000, 268 neurons 0.963
+averaged covered neurons 0.979
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [5.5587968e-08 1.4052285e-09 2.1694357e-05 2.1436877e-04 7.1369652e-09
+ 3.5439541e-07 3.3903780e-12 9.9970466e-01 1.6273616e-05 4.2423591e-05]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 0
+################### layer_name1, index1: block2_conv1, 8
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 0
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 10
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 1.000, 268 neurons 0.966
+averaged covered neurons 0.981
+gen_img.shape: (1, 28, 28, 1)
+model1.predict(gen_img)[0]: [1.9824189e-07 2.6466140e-07 2.8108758e-07 1.2994632e-04 3.1645943e-06
+ 9.9932015e-01 1.3825446e-06 1.6309599e-08 1.0666836e-05 5.3397141e-04]
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 0
+################### layer_name1, index1: before_softmax, 4
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 0
+&&&&&&&&&&&&&&&&&&&&&&&&&& at this step, not_covered neuron number is: 9
+the overall grad iterations is: 50
+covered neurons percentage 52 neurons 1.000, 148 neurons 1.000, 268 neurons 0.966
+averaged covered neurons 0.981
